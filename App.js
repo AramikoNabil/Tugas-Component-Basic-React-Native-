@@ -16,6 +16,7 @@ import {
 import img from './assets/images/joshua-hoehne-mK8CR5ZphMg-unsplash.jpg';
 import styles from './Styles';
 const {height, width} = Dimensions.get('window');
+const label = 'Ini Text Lagi';
 
 class App extends React.Component {
   render() {
@@ -34,7 +35,7 @@ class App extends React.Component {
           <Text style={styles.Button}>Ini Text Juga</Text>
           <Button
             title="Pencet Ini"
-            onPress={() => Alert.alert('Ini Text Lagi')}
+            onPress={() => Alert.alert(label)}
           />
         </View>
         <Picker style={styles.Picker}>
